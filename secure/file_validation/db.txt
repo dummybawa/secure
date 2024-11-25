@@ -1,0 +1,8 @@
+CREATE DATABASE secure_uploads;
+use secure_uploads;
+CREATE TABLE files (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    filename VARCHAR(255) NOT NULL,
+    mime_type VARCHAR(50) NOT NULL,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

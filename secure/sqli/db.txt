@@ -1,0 +1,9 @@
+create database sql_injection_test;
+use sql_injection_test;
+
+create table users(
+    id int auto_increment primary key,
+    username varchar(50) not null unique,
+    password varchar(50) not null
+);
+insert into users (username, password) values ('admin','password');
